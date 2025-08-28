@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>Leetcode_Solutions</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="1D Dynamic Programming\" />
+      <Folder Include="2D Dynamic Programming\" />
+      <Folder Include="Advanced Graphs\" />
+      <Folder Include="Arrays &amp; Hashing\" />
+      <Folder Include="Backtracking\" />
+      <Folder Include="Binary Search\" />
+      <Folder Include="Bit Manipulation\" />
+      <Folder Include="Graphs\" />
+      <Folder Include="Greedy\" />
+      <Folder Include="Intervals\" />
+      <Folder Include="Linked List\" />
+      <Folder Include="Math &amp; Geometry\" />
+      <Folder Include="Heap &amp; Priority Queue\" />
+      <Folder Include="Sliding Window\" />
+      <Folder Include="Stack\" />
+      <Folder Include="Trees\" />
+      <Folder Include="Tries\" />
+      <Folder Include="Two Pointers\" />
+    </ItemGroup>
+
+</Project>
