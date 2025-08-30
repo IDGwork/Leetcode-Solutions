@@ -9,6 +9,20 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="1D Dynamic Programming\Coin Change - Leetcode 322\" />
+      <Folder Include="1D Dynamic Programming\Combination Sum 4 - Leetcode 377\" />
+      <Folder Include="1D Dynamic Programming\Decode Ways - Leetcode 91\" />
+      <Folder Include="1D Dynamic Programming\House Robber  - Leetcode 198\" />
+      <Folder Include="1D Dynamic Programming\House Robber 2  - Leetcode 213\" />
+      <Folder Include="1D Dynamic Programming\Integer Break - Leetcode 343\" />
+      <Folder Include="1D Dynamic Programming\Longest Increasing Subsequence - Leetcode 300\" />
+      <Folder Include="1D Dynamic Programming\Longest Palindromic Substring - Leetcode 5\" />
+      <Folder Include="1D Dynamic Programming\Maximum Product Subarray - Leetcode 152\" />
+      <Folder Include="1D Dynamic Programming\Palindromic Substrings - Leetcode 647\" />
+      <Folder Include="1D Dynamic Programming\Partition Equal Subset Sum - Leetcode 416\" />
+      <Folder Include="1D Dynamic Programming\Perfect Squares - Leetcode 279\" />
+      <Folder Include="1D Dynamic Programming\Stone Game 3 - Leetcode 1406\" />
+      <Folder Include="1D Dynamic Programming\Word Break - Leetcode 139\" />
       <Folder Include="2D Dynamic Programming\" />
       <Folder Include="Advanced Graphs\" />
       <Folder Include="Arrays &amp; Hashing\" />
