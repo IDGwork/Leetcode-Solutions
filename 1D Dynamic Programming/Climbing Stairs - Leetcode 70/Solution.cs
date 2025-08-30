@@ -22,16 +22,16 @@ public class Solution70
 
 //Algorithm:
 
-//Approach -
+//Approach - Bottom up DP to count all distinct ways to reach the top.
 
 //Step 1 - Initialisation:
-    //dp[1] = 1 (1 way to reach step 1)
-    //dp[2] = 2 (either 1 + 1 or 2 directly)
+    //dp[1] = 1 (1 way to reach step 1).
+    //dp[2] = 2 (either 1 + 1 or 2 directly).
 //Step 2 - Fill dp table:
     //For each i from 3 to n + 1, use dp[i] = dp[i - 1] + dp[i - 2]
     //since we can arrive from one or two steps below.
 //Step 3 - Return:
     //Return dp[n] as the total ways to reach the top.
 
-//Time: O(n)
-//Space: O(n)
+//Time: O(n).
+//Space: O(n).
