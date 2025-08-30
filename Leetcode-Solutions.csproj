@@ -9,7 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="1D Dynamic Programming\" />
       <Folder Include="2D Dynamic Programming\" />
       <Folder Include="Advanced Graphs\" />
       <Folder Include="Arrays &amp; Hashing\" />
