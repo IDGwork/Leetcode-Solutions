@@ -26,3 +26,24 @@ public class Solution152
         return res;
     }
 }
+
+
+//Algorithm:
+
+//Approach - Bottum up dp to track max/min products ending at index i.
+
+//Step 1 - Initialisation:
+    //Initialise res = nums[0].
+    //Initialise dpMax[nums.Length].
+    //Initialise dpMin[nums.Length].
+    //Initialise dpMax[0] = nums[0].
+    //Initialise dpMin[0] = nums[0].
+//Step 2 - Fill dp table:
+    //dpMax[i] = max(nums[i], dpMax[i - 1] * nums[i], dpMin[i - 1] * nums[i]).
+    //dpMin[i] = min(nums[i], dpMax[i - 1] * nums[i], dpMin[i - 1] * nums[i]).
+    //Update res = max(res, dpMax[i]).
+//Step 3 - Return:
+//    Return res as maximum product subarray.
+
+//Time: O(n).
+//Space: O(1).
