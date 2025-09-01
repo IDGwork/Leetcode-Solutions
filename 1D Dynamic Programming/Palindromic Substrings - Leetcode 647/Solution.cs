@@ -10,9 +10,11 @@ public class Solution647
 
         for (var i = n - 1; i > -1; i--)
         {
-            for (int j = i; j < n; j++)
+            var prev = false;                 
+            for (var j = i; j < n; j++)
             {
-                if (s[i] == s[j] && (j - i < 3 || dp[j - 1]))
+                var temp = dp[j];              
+                if (s[i] == s[j] && (j - i < 2 || prev))
                 {
                     dp[j] = true;
                     res++;
@@ -21,6 +23,7 @@ public class Solution647
                 {
                     dp[j] = false;
                 }
+                prev = temp;                   
             }
         }
 
@@ -44,12 +47,13 @@ public class Solution647
     //A substring s[i..j] is palindrome if:
         //Characters match (s[i] == s[j]), and
         //either length < 3 (j - i < 3) or the inner
-        //substring s[i+1..j-1] was palindrome (dp[j - 1]).
-//Step3 - Count:
+        //substring s[i+1..j-1] was palindrome (tracked by prev).
+//Step 3 - Count:
     //If valid, mark dp[j] = true and increment res.
     //Otherwise, reset dp[j] = false.
+    //Update prev correctly to carry dp[i+1][j-1] forward.
 //Step 4 - Return:
     //Return res as the total count of palindromic substrings.
 
 //Time: O(n^2).
-//Space: O(n).
+//Space: O(n)
