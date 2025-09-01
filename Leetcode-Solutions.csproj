@@ -9,7 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="1D Dynamic Programming\Coin Change - Leetcode 322\" />
       <Folder Include="1D Dynamic Programming\Combination Sum 4 - Leetcode 377\" />
       <Folder Include="1D Dynamic Programming\Integer Break - Leetcode 343\" />
       <Folder Include="1D Dynamic Programming\Longest Increasing Subsequence - Leetcode 300\" />
