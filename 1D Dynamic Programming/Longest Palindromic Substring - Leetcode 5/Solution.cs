@@ -59,5 +59,5 @@ public class Solution5
 //Step 4 - Return:
     //Return s.Substring(start, maxLen).
 
-//Time: O(n).
+//Time: O(n^2).
 //Space: O(n).
