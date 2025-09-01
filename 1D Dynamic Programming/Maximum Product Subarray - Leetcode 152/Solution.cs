@@ -30,7 +30,7 @@ public class Solution152
 
 //Algorithm:
 
-//Approach - Bottum up dp to track max/min products ending at index i.
+//Approach - Bottom up dp to track max/min products ending at index i.
 
 //Step 1 - Initialisation:
     //Initialise res = nums[0].
