@@ -21,5 +21,27 @@ public class Solution416
         }
 
         return dp[target];
-    } 
+    }
 }
+
+
+//Algorithm:
+
+//Approach - Bottom-Up DP for subset sum to half of total.
+
+//Step 1 - Initialisation:
+    //Initialise total = 0 and count nums total.
+    //If total % 2 != 0 (ie impossible to have 2 equal sub-arrays)
+    //return false straight away.
+    //Initialise target = total / 2 (total we need in sub-arrays).
+    //Initialise dp = bool[target + 1].
+    //Initialise dp[0] = true.
+//Step 2 - Fill DP table:
+    //Iterate over each number:
+        //Iterate backwards from target while >= num:
+            //Update dp: If dp[i - num] is true, set dp[i] = true.
+//Step 3 - Return:
+    //Return dp[total / 2]. 
+
+//Time: O( n * (sum / 2) ).
+//Space: O(sum / 2).
