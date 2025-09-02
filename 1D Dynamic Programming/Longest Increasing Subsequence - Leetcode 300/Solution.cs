@@ -28,3 +28,22 @@ public class Solution300
         return res;
     }
 }
+
+
+//Algorithm:
+
+//Approach - Bottom-Up DP to compute the longest increasing subsequence.
+
+//Step 1 - Initialisation:
+    //Initialise dp = int[nums.Length].
+    //Initialise dp with all 1 values.
+//Step 2 - Fill DP table:
+    //For every i:
+        //Loop over all j < i:
+            //If nums[i] > nums[j]:
+                //dp[i] = max(dp[i], dp[j] + 1).
+//Step 3 - Return:
+    //Return max value in dp, which stores the longest increasing subsequence.
+
+//Time: O(n^2).
+//Space: O(n).
