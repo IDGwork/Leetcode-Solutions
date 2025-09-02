@@ -23,13 +23,19 @@ public class Solution279
 
 //Algorithm:
 
-//Approach - Problem-specific description
+//Approach - Bottom-Up DP to find the fewest number of perfect
+//squares summing to n.
 
 //Step 1 - Initialisation:
-//    Base case setup
-//Step 2 - Core logic (e.g., Fill dp table, Traverse graph)
+    //Initialise dp = int[n + 1]. Fill with int.MaxValue as default.
+    //Initialise dp[0] = 0 (0 perfect squares sum to 0).
+//Step 2 - Fill DP table:
+    //For each i from 1 to n:
+        //Try every square j*j <= i:
+            //Update dp[i] = min(dp[i], dp[i - j * j] + 1).
 //Step 3 - Return:
-//    Return final computed result
+    //Return dp[n] as the minimum number of perfect squares that
+    //sum to n.
 
-//Time: O(n).
+//Time: O( n * sqrt(n) ).
 //Space: O(n).
