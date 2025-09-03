@@ -24,3 +24,29 @@ public class Solution1406
         return "Tie";
     }
 }
+
+
+//Algorithm:
+
+//Approach - Bottom-Up DP. We simulate the game backwards, letting
+//dp[i] represent the maximum score difference the current player
+//can achieve starting from index i.
+
+//Step 1 - Initialisation:
+    //Initialise dp = int[n + 1].
+    //dp[n] = 0 (the score difference is 0 with no stones left).
+    //All other positions are initially set as int.MinValue.
+//Step 2 - Fill DP table:
+    //For each index i from n - 1 down to 0:
+        //Consider taking 1, 2 or 3 stones.
+        //Keep a running sum take of the chosen stones.
+        //Update dp[i] = max(dp[i], take - dp[i + k + 1]) since
+        //the opponent plays optimally next.
+//Step 3 - Return:
+    //Check dp[0]:
+        //If positive - "Alice" wins.
+        //If negative - "Bob" wins.
+        //If 0 - "Tie".
+
+//Time: O(n).
+//Space: O(n).
