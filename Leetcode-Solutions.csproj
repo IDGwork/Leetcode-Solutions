@@ -9,7 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="1D Dynamic Programming\Stone Game 3 - Leetcode 1406\" />
       <Folder Include="2D Dynamic Programming\Unique Paths - Leetcode 62\" />
       <Folder Include="Advanced Graphs\" />
       <Folder Include="Arrays &amp; Hashing\" />
