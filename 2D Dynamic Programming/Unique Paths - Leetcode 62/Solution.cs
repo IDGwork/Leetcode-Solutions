@@ -22,3 +22,21 @@ public class Solution62
         return dp[rows - 1, cols - 1];
     }
 }
+
+
+//Algorithm:
+
+//Approach - 2D DP to count ways from top-left to bottom-right.
+
+//Step 1 - Initialisation:
+    //Initialise a 2D array dp[rows, cols].
+    //Initialise all cells in first row and first column to 1.
+    //since there is only one way to reach them.
+//Step 2 - Fill DP table:
+    //From cell (1, 1) to (rows - 1, cols - 1):
+        //dp[r, c] = dp[r - 1, c] (from top) + dp[r, c - 1] (from left).
+//Step 3 - Return:
+    //Return dp[rows - 1, cols - 1] as the total unique paths.
+
+//Time: O(rows * cols).
+//Space: O(rows * cols).
