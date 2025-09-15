@@ -23,3 +23,21 @@ public class Solution64
         return dp[rows - 1, cols - 1];
     }
 }
+
+
+//Algorithm:
+
+//Approach - Bottom-Up 2D DP to find minimal path sum.
+
+//Step 1 - Initialisation:
+    //Initialise dp[rows, cols].
+    //Initialise dp[0, 0] = grid[0][0].
+    //Fill first row and first column with cumulative sums.
+//Step 2 - Fill DP table:
+    //For every dp[r, c], set:
+        //dp[r, c] = min(dp[r - 1, c], dp[r, c - 1]) + grid[r][c].
+//Step 3 - Return:
+    //Return dp[rows - 1, cols - 1].
+
+//Time: O(rows * cols).
+//Space: O(rows * cols).
