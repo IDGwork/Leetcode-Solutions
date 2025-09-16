@@ -28,3 +28,17 @@ public class Solution1049
         return 0;
     }
 }
+
+
+//Algorithm:
+
+//Approach - Problem-specific description
+
+//Step 1 - Initialisation:
+//    Base case setup
+//Step 2 - Core logic (e.g., Fill dp table, Traverse graph)
+//Step 3 - Return:
+//    Return final computed result
+
+//Time: O(n).
+//Space: O(n).

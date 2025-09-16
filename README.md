@@ -6,7 +6,7 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/IDGwork/Leetcode-Solutions?style=social)
 
 A .NET 8.0 Console Application containing my **C# solutions for LeetCode problems**, neatly organized by topic.  
-Each problem is placed in a topic-specific folder (`ProblemName - Leetcode <Number>`) and contains a single `Solution.cs` file with a class named `Solution<Number>`.  
+Each problem is placed in a topic-specific folder (`ProblemName - Leetcode <Number>`) and contains a `Solution.cs` file (C#) and a `solution.py` file (Python) for the same problem. The C# file uses a class named `Solution<Number>`, while Python files follow snake_case naming..  
 The structure ensures consistency, clarity, and quick testing in Rider or Visual Studio.
 
 ---
@@ -49,9 +49,11 @@ The structure ensures consistency, clarity, and quick testing in Rider or Visual
 Leetcode-Solutions/
 ├─ 1D Dynamic Programming/
 │  ├─ Climbing Stairs - Leetcode 70/
-│  │   └─ Solution.cs
+│  │   ├─ Solution.cs
+│  │   └─ solution.py
 │  ├─ Min Cost Climbing Stairs - Leetcode 746/
-│  │   └─ Solution.cs
+│  │   ├─ Solution.cs
+│  │   └─ solution.py
 │  └─ …
 ├─ 2D Dynamic Programming/
 ├─ Advanced Graphs/
