@@ -37,9 +37,9 @@ public class Solution494
     //dp[0][0] = 1 (There is exactly 1 way to reach sum 0 with no elements).
 //Step 2 - Fill DP table:
     //For each number nums[i]:
-    //For each sum already in dp[i]:
-        //Add nums[i] to the sum: increment count for dp[i+1][total + nums[i]].
-        //Subtract nums[i] from the sum: increment count for dp[i+1][total - nums[i]].
+        //For each sum already in dp[i]:
+            //Add nums[i] to the sum: increment count for dp[i+1][total + nums[i]].
+            //Subtract nums[i] from the sum: increment count for dp[i+1][total - nums[i]].
 //Step 3 - Return:
     //Look up dp[n][target]. If target is reachable, return the count of ways;
     //otherwise return 0.
