@@ -32,7 +32,7 @@ public class Solution1049
 
 //Algorithm:
 
-//Approach - Problem-specific description
+//Approach - DP to find the closest subset sum to half the total weight.
 
 //Step 1 - Initialisation:
     //Initialise total sum of stones.

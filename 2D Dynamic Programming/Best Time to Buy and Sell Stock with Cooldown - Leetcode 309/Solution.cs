@@ -20,3 +20,17 @@ public class Solution309
         return dpSell[prices.Length - 1];
     }
 }
+
+
+//Algorithm:
+
+//Approach - 
+
+//Step 1 - Initialisation:
+//    Base case setup
+//Step 2 - Core logic (e.g., Fill dp table, Traverse graph)
+//Step 3 - Return:
+//    Return final computed result
+
+//Time: O(n).
+//Space: O(n).
