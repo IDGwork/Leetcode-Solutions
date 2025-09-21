@@ -35,10 +35,20 @@ public class Solution1049
 //Approach - Problem-specific description
 
 //Step 1 - Initialisation:
-//    Base case setup
-//Step 2 - Core logic (e.g., Fill dp table, Traverse graph)
+    //Initialise total sum of stones.
+    //Initialise target = total / 2.
+    //Initialise dp = bool[stones.Length + 1, target + 1].
+    //Initialise dp[0, 0] = true.
+//Step 2 - Fill DP table:
+    //For each stone i:
+        //For each weight j:
+            //Either exclude the stone: dp[i, j] = dp[i - 1, j].
+            //Or include it if possible: dp[i, j] |= dp[i - 1, j - stones[i - 1]].
+//Step 4: Find the best partition:
+    //Iterate from target down to 0.
+    //The largest j where dp[n, j] is true gives one subset sum.
 //Step 3 - Return:
-//    Return final computed result
+    //Return total - 2 * j as the minimal difference between two piles.
 
-//Time: O(n).
-//Space: O(n).
+//Time: O(n * sum).
+//Space: O(n * sum).
