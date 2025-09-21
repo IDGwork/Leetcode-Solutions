@@ -44,5 +44,5 @@ public class Solution494
     //Look up dp[n][target]. If target is reachable, return the count of ways;
     //otherwise return 0.
 
-//Time: O(n * m), 
+//Time: O(n * m)
 //Space: O(n * m)
