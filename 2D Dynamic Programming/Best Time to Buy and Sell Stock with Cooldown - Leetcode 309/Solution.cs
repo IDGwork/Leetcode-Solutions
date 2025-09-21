@@ -24,13 +24,20 @@ public class Solution309
 
 //Algorithm:
 
-//Approach - 
+//Approach - DP with cooldown period (must reset 1 day after selling).
 
 //Step 1 - Initialisation:
-//    Base case setup
-//Step 2 - Core logic (e.g., Fill dp table, Traverse graph)
+    //Initialise dpSell = int[prices.Length].
+    //Initialise dpBuy = int[prices.Length].
+    //Initialise dpSell[0] = 0.
+    //Initialise dpBuy[0] = -prices[0].
+//Step 2 - Transition:
+    //dpBuy = max(dpBuy[i - 1], dpSell[i - 2] - prices[i]) - (you either
+    //carry over or buy today (after cooldown)).
+    //dpSell[i] = max(dpSell[i - 1], dpBuy[i - 1] + prices[i]) - (you either
+    //carry over or sell today).
 //Step 3 - Return:
-//    Return final computed result
+    //Return dpSell[prices.Length - 1].
 
 //Time: O(n).
 //Space: O(n).
