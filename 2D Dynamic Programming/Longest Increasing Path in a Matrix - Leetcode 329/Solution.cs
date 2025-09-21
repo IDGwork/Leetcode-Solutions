@@ -43,3 +43,22 @@ public class Solution329
         return res;
     }
 }
+
+
+//Algorithm:
+
+//Approach - DP + dfs memoization to store the longest increasing path from each cell.
+
+//Step 1 - Initialisation:
+    //Initialise rows, cols.
+    //Initialise dp = int[rows, cols].
+    //Initialise dirs.
+    //Initialise method Dfs(int r, int c).
+//Step 2 - Dfs:
+    //For each (r, c) recursively explore up/down/left/right if neighbor is strictly greater.
+    //Use memoization to avoid recomputation.
+//Step 3 - Return:
+    //Loop over all cells and return the maximum dp[r][c] found.
+
+//Time: O(rows * cols).
+//Space: O(rows * cols).
