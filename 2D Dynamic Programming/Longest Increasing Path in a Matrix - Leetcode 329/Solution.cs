@@ -18,13 +18,12 @@ public class Solution329
         int Dfs(int r, int c)
         {
             if (dp[r, c] != 0) return dp[r, c];
-
             var maxLen = 1;
+            
             foreach (var dir in dirs)
             {
                 var nr = r + dir[0];
-                var nc = c + dir[1];
-                
+                var nc = c + dir[1]; 
                 if (nr >= 0 && nr < rows &&  nc >= 0 && nc < cols && matrix[nr][nc] > matrix[r][c]) maxLen = Math.Max(maxLen, 1 + Dfs(nr, nc));
             }
             
